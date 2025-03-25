@@ -1,48 +1,151 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #F3F4F6;
-    color: #333;
-  }
-  
-  header {
-    background-color: #1E3A8A;
-    color: #FFD700;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  nav a {
-    margin: 0 15px;
-    text-decoration: none;
-    color: #FFD700;
-  }
-  
-  nav a:hover {
-    color: #F3F4F6;
-  }
-  
-  #hero {
-    padding: 50px 20px;
-    text-align: center;
-    background-color: #fff;
-  }
-  
-  .btn {
-    display: inline-block;
-    background-color: #1E3A8A;
-    color: #FFD700;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-  }
-  
-  footer {
-    text-align: center;
-    background-color: #1E3A8A;
-    color: #F3F4F6;
-    padding: 10px;
-  }
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #F3F4F6;
+  color: #333;
+}
 
-  
+header {
+  background-color: #1E3A8A;
+  color: #FFD700;
+  padding: 20px;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #FFD700;
+}
+
+nav a:hover {
+  color: #F3F4F6;
+}
+
+#hero {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #1E3A8A;
+  color: #FFD700;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  background-color: #1E3A8A;
+  color: #F3F4F6;
+  padding: 10px;
+}
+
+section {
+  padding: 40px;
+  text-align: center;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+form button {
+  padding: 10px 20px;
+  background-color: #1E3A8A;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+form button:hover {
+  background-color: #FFD700;
+  color: #1E3A8A;
+}
+/* Fade-In Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply Animation to Hero Section */
+#hero {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Button Hover Effect */
+.btn {
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  background-color: #FFD700;
+  color: #1E3A8A;
+}
+/* Fade-In Scroll Animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Apply to Sections */
+.slide-in {
+  animation: slideIn 1s ease-in-out;
+}
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Apply to Button */
+.btn {
+  animation: bounce 2s infinite;
+}
