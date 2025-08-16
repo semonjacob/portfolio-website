@@ -29,21 +29,32 @@
 
   <!-- Navigation -->
   <nav class="nav-bar" id="navbar">
-    <ul>
-      <li><a href="#hero" class="nav-link active">Home</a></li>
-      <li><a href="#about" class="nav-link">About</a></li>
-      <li><a href="#skills" class="nav-link">Skills</a></li>
-      <li><a href="#projects" class="nav-link">Projects</a></li>
-      <li><a href="#experience" class="nav-link">Experience</a></li>
-      <li><a href="#education" class="nav-link">Education</a></li>
-      <li><a href="#contact" class="nav-link">Contact</a></li>
-    </ul>
+    <div class="nav-container">
+      <div class="nav-logo">
+        <a href="#hero" class="nav-link logo-link">J. Semon</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#hero" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
   </nav>
 
   <!-- Hero Section -->
   <header id="hero" class="hero-section">
     <div class="hero-card" data-aos="fade-up">
-      <img src="assets/images/semon.jpg" alt="J. Semon" class="hero-img" width="160" height="160" srcset="assets/images/semon.jpg 1x, assets/images/semon@2x.jpg 2x">
+      <img src="assets/images/semon.jpg" alt="J. Semon" class="hero-img"
+        srcset="assets/images/semon.jpg 1x, assets/images/semon@2x.jpg 2x">
       <h1>Hi, I’m Semon Jacob</h1>
       <h2 class="typing"><span id="typed"></span></h2>
       <a href="#contact" class="btn cta-btn">Let's Connect</a>
@@ -63,7 +74,8 @@
   <section id="about" class="about-section">
     <div class="about-container" data-aos="fade-up">
       <div class="about-img-col">
-        <img src="assets/images/semon.jpg" alt="Semon Jacob" class="about-img" width="220" height="220" srcset="assets/images/semon.jpg 1x, assets/images/semon@2x.jpg 2x">
+        <img src="assets/images/semon.jpg" alt="Semon Jacob" class="about-img"
+          srcset="assets/images/semon.jpg 1x, assets/images/semon@2x.jpg 2x">
       </div>
       <div class="about-text-col">
         <h2>About Me</h2>
