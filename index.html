@@ -4,167 +4,230 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>J. Semon Portfolio</title>
+  <meta name="description" content="Portfolio of J. Semon - Creative Video Editor, Motion Designer, and Multimedia Specialist.">
+  <meta name="keywords" content="Semon, Portfolio, Video Editor, Motion Designer, Multimedia, Design, Projects, Skills, Experience">
+  <meta name="author" content="J. Semon">
 
-  <!-- Google Fonts (Free Font) -->
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
-  <!-- Font Awesome Icons (Free Icons) -->
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-  <!-- Your CSS -->
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="assets/images/semon.jpg">
 
-<!-- AOS Animations -->
-<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
-
+  <!-- AOS Animations -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation -->
-<nav>
-  <ul>
-    <li><a href="#hero">Home</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#experience">Experience</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#education">Education</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
+  <!-- Back to Top Button -->
+  <button id="backToTop" title="Back to top"><i class="fas fa-chevron-up"></i></button>
 
-  <!-- Header / Hero Section -->
-  <header id="hero">
-    <img src="assets/images/semon.jpg" alt="J. Semon" class="hero-img" style="width:150px; border-radius:50%; margin-bottom:20px;">
-    <h1 data-aos="fade-up">Hi, I’m Semon Jacob</h1>
-    <p data-aos="fade-right">Creative Video Editor & Motion Designer</p>
-    <div class="social-icons">
-      <a href="https://www.linkedin.com/in/j-semon/" target="_blank"><i class="fab fa-linkedin"></i></a>
-      <a href="https://github.com/semonjacob/portfolio-website.git" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="https://www.instagram.com/semon_jacob/" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="https://www.youtube.com/@semonjacob" target="_blank"><i class="fab fa-youtube"></i></a>
-      <a href="https://www.facebook.com/semon.jacob" target="_blank"><i class="fab fa-facebook"></i></a>
-      <a href="mailto:semonjeyakumar@gmail.com"><i class="fas fa-envelope"></i></a>
+  <!-- Navigation -->
+  <nav class="nav-bar" id="navbar">
+    <ul>
+      <li><a href="#hero" class="nav-link active">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#experience" class="nav-link">Experience</a></li>
+      <li><a href="#education" class="nav-link">Education</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="hero" class="hero-section">
+    <div class="hero-card" data-aos="fade-up">
+      <img src="assets/images/semon.jpg" alt="J. Semon" class="hero-img" width="160" height="160" srcset="assets/images/semon.jpg 1x, assets/images/semon@2x.jpg 2x">
+      <h1>Hi, I’m Semon Jacob</h1>
+      <h2 class="typing"><span id="typed"></span></h2>
+      <a href="#contact" class="btn cta-btn">Let's Connect</a>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/j-semon/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/semonjacob/portfolio-website.git" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.instagram.com/semon_jacob/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.youtube.com/@semonjacob" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.facebook.com/semon.jacob" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="mailto:semonjeyakumar@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+      <a href="assets/pdf/Semon_Jacob_Resume.pdf" download class="btn resume-btn">Download Resume</a>
     </div>
-    <a href="assets/pdf/Semon_Jacob_Resume.pdf" download class="btn">Download Resume</a>
   </header>
 
- <!-- About / Summary Section -->
-<section id="about" data-aos="fade-up">
-  <h2>About Me</h2>
-  <p>Results-driven Multimedia Creator with hands-on experience in photo and video editing, graphic design, and AI-driven media tools...</p>
-</section>
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="about-container" data-aos="fade-up">
+      <div class="about-img-col">
+        <img src="assets/images/semon.jpg" alt="Semon Jacob" class="about-img" width="220" height="220" srcset="assets/images/semon.jpg 1x, assets/images/semon@2x.jpg 2x">
+      </div>
+      <div class="about-text-col">
+        <h2>About Me</h2>
+        <p>
+          Results-driven <span class="accent">Multimedia Creator</span> with hands-on experience in <span class="accent">photo and video editing</span>, <span class="accent">graphic design</span>, and <span class="accent">AI-driven media tools</span>. Passionate about <span class="accent">storytelling</span> and <span class="accent">visual communication</span>, I thrive on delivering creative solutions that engage and inspire audiences.
+        </p>
+      </div>
+    </div>
+  </section>
 
-<!-- Experience Section -->
-<section id="experience" data-aos="fade-right">
-  <h2>Experience</h2>
-  <div class="project-list">
-    <div class="project" data-aos="fade-up" data-aos-delay="200">
-      <h3>Multimedia Creator & Content Specialist</h3>
-      <p>Jesus Redeems Ministry-Media | 1 year 3 months</p>
-      <ul>
-        <li>Create engaging multimedia content for ministry outreach.</li>
-        <li>Edit photos and videos using Premiere Pro, After Effects, and Photoshop.</li>
-        <li>Handle videography and photography for church events.</li>
-        <li>Use AI tools to generate video content, reducing production time by 30%.</li>
-        <li>Write and edit scripts aligned with ministry's mission.</li>
-      </ul>
+  <!-- Skills Section -->
+  <section id="skills" class="skills-section">
+    <div class="skills-card" data-aos="fade-up">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-bar" data-aos="fade-right" data-skill="90">
+          <span>Adobe Premiere Pro</span>
+          <div class="bar-bg"><div class="bar-fill" style="width:90%"></div></div>
+        </div>
+        <div class="skill-bar" data-aos="fade-right" data-skill="85">
+          <span>After Effects</span>
+          <div class="bar-bg"><div class="bar-fill" style="width:85%"></div></div>
+        </div>
+        <div class="skill-bar" data-aos="fade-right" data-skill="80">
+          <span>Photoshop</span>
+          <div class="bar-bg"><div class="bar-fill" style="width:80%"></div></div>
+        </div>
+        <div class="skill-bar" data-aos="fade-right" data-skill="75">
+          <span>Scriptwriting</span>
+          <div class="bar-bg"><div class="bar-fill" style="width:75%"></div></div>
+        </div>
+        <div class="skill-bar" data-aos="fade-right" data-skill="70">
+          <span>AI Tools</span>
+          <div class="bar-bg"><div class="bar-fill" style="width:70%"></div></div>
+        </div>
+        <div class="skill-bar" data-aos="fade-right" data-skill="95">
+          <span>English</span>
+          <div class="bar-bg"><div class="bar-fill" style="width:95%"></div></div>
+        </div>
+        <div class="skill-bar" data-aos="fade-right" data-skill="100">
+          <span>Tamil</span>
+          <div class="bar-bg"><div class="bar-fill" style="width:100%"></div></div>
+        </div>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- Projects Section -->
-<section id="projects" data-aos="fade-up">
-  <h2>Projects</h2>
-  <!-- Category Filter Buttons -->
-  <div class="project-categories">
-    <button class="project-category-btn active" data-category="all">All</button>
-    <button class="project-category-btn" data-category="design">Design</button>
-    <button class="project-category-btn" data-category="video">Video</button>
-    <button class="project-category-btn" data-category="web">Web</button>
-  </div>
-  <div class="project-list">
-    <div class="project" data-aos="fade-up" data-aos-delay="0" data-category="design">
-      <img src="assets/images/project1.jpg" alt="Social Media Graphics">
-      <h3>Social Media Graphics</h3>
-      <p>Designed banners, posters, and social media posts...</p>
-      <a href="#" class="project-link-btn" target="_blank">View Project</a>
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section">
+    <h2 data-aos="fade-up">Projects</h2>
+    <div class="project-categories" data-aos="fade-up">
+      <button class="project-category-btn active" data-category="all">All</button>
+      <button class="project-category-btn" data-category="design">Design</button>
+      <button class="project-category-btn" data-category="video">Video</button>
+      <button class="project-category-btn" data-category="web">Web</button>
     </div>
-    <div class="project" data-aos="fade-up" data-aos-delay="150" data-category="video">
-      <img src="assets/images/project2.jpg" alt="AI-Generated Content">
-      <h3>AI-Generated Content</h3>
-      <p>Created explainer videos using AI tools...</p>
-      <a href="#" class="project-link-btn" target="_blank">View Project</a>
+    <div class="project-list">
+      <div class="project" data-aos="fade-up" data-aos-delay="0" data-category="design">
+        <img src="assets/images/project1.jpg" alt="Social Media Graphics" srcset="assets/images/project1.jpg 1x, assets/images/project1@2x.jpg 2x">
+        <h3>Social Media Graphics</h3>
+        <p>Designed banners, posters, and social media posts for various campaigns and brands.</p>
+        <a href="#" class="project-link-btn" target="_blank">View Project</a>
+      </div>
+      <div class="project" data-aos="fade-up" data-aos-delay="150" data-category="video">
+        <img src="assets/images/project2.jpg" alt="AI-Generated Content" srcset="assets/images/project2.jpg 1x, assets/images/project2@2x.jpg 2x">
+        <h3>AI-Generated Content</h3>
+        <p>Created explainer videos using AI tools, reducing production time and increasing engagement.</p>
+        <a href="#" class="project-link-btn" target="_blank">View Project</a>
+      </div>
+      <div class="project" data-aos="fade-up" data-aos-delay="300" data-category="video">
+        <img src="assets/images/project3.jpg" alt="Ministry Outreach Video Campaign" srcset="assets/images/project3.jpg 1x, assets/images/project3@2x.jpg 2x">
+        <h3>Ministry Outreach Video Campaign</h3>
+        <p>Produced promotional videos for outreach programs, boosting online reach by 40%.</p>
+        <a href="#" class="project-link-btn" target="_blank">View Project</a>
+      </div>
+      <div class="project" data-aos="fade-up" data-aos-delay="450" data-category="web">
+        <img src="assets/images/project4.jpg" alt="Portfolio Website" srcset="assets/images/project4.jpg 1x, assets/images/project4@2x.jpg 2x">
+        <h3>Portfolio Website</h3>
+        <p>Developed a responsive portfolio website using HTML, CSS, and JS.</p>
+        <a href="#" class="project-link-btn" target="_blank">View Project</a>
+      </div>
     </div>
-    <div class="project" data-aos="fade-up" data-aos-delay="300" data-category="video">
-      <img src="assets/images/project3.jpg" alt="Ministry Outreach Video Campaign">
-      <h3>Ministry Outreach Video Campaign</h3>
-      <p>Produced promotional videos...</p>
-      <a href="#" class="project-link-btn" target="_blank">View Project</a>
-    </div>
-    <!-- Example web project -->
-    <div class="project" data-aos="fade-up" data-aos-delay="450" data-category="web">
-      <img src="assets/images/project4.jpg" alt="Portfolio Website">
-      <h3>Portfolio Website</h3>
-      <p>Developed a responsive portfolio website using HTML, CSS, and JS.</p>
-      <a href="#" class="project-link-btn" target="_blank">View Project</a>
-    </div>
-  </div>
-</section>
+  </section>
 
-<!-- Education Section -->
-<section id="education" data-aos="fade-left">
-  <h2>Education</h2>
-  <div class="project-list">
-    <div class="project" data-aos="fade-up">
-      <h3>Bachelor of Commerce (B.Com)</h3>
-      <p>Indo Asian Academy Institute of Management, Bangalore University | 2019 | 67%</p>
+  <!-- Experience Section -->
+  <section id="experience" class="experience-section">
+    <h2 data-aos="fade-up">Experience</h2>
+    <div class="project-list">
+      <div class="project" data-aos="fade-up" data-aos-delay="0">
+        <img src="assets/images/experience1.jpg" alt="Jesus Redeems Ministry-Media" srcset="assets/images/experience1.jpg 1x, assets/images/experience1@2x.jpg 2x">
+        <h3>Multimedia Creator & Content Specialist</h3>
+        <p>Jesus Redeems Ministry-Media | 1 year 3 months</p>
+        <ul>
+          <li>Create engaging multimedia content for ministry outreach.</li>
+          <li>Edit photos and videos using Premiere Pro, After Effects, and Photoshop.</li>
+          <li>Handle videography and photography for church events.</li>
+          <li>Use AI tools to generate video content, reducing production time by 30%.</li>
+          <li>Write and edit scripts aligned with ministry's mission.</li>
+        </ul>
+      </div>
+      <!-- Add more experience cards as needed -->
     </div>
-    <div class="project" data-aos="fade-up" data-aos-delay="200">
-      <h3>Multimedia Studies</h3>
-      <p>Expected Completion: 2024 | Studied graphic design...</p>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="education-section">
+    <h2 data-aos="fade-up">Education</h2>
+    <div class="project-list">
+      <div class="project" data-aos="fade-up" data-aos-delay="0">
+        <img src="assets/images/education1.jpg" alt="B.Com" srcset="assets/images/education1.jpg 1x, assets/images/education1@2x.jpg 2x">
+        <h3>Bachelor of Commerce (B.Com)</h3>
+        <p>Indo Asian Academy Institute of Management, Bangalore University | 2019 | 67%</p>
+      </div>
+      <div class="project" data-aos="fade-up" data-aos-delay="150">
+        <img src="assets/images/education2.jpg" alt="Multimedia Studies" srcset="assets/images/education2.jpg 1x, assets/images/education2@2x.jpg 2x">
+        <h3>Multimedia Studies</h3>
+        <p>Expected Completion: 2024 | Studied graphic design, video editing, and animation.</p>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- Skills Section -->
-<section id="skills" data-aos="flip-up">
-  <h2>Skills</h2>
-  <ul>
-    <li>Content Creation: Scriptwriting, Storyboarding...</li>
-    <li>Software Proficiency: Adobe Creative Suite...</li>
-    <li>Soft Skills: Analytical thinking, problem-solving...</li>
-    <li>Languages: Tamil, English</li>
-    <li>Multimedia Expertise: Photo & Video Editing...</li>
-  </ul>
-</section>
-
-<!-- Contact Section -->
-<section id="contact" data-aos="fade-up">
-  <h2>Contact Me</h2>
-  <form data-aos="zoom-in">
-    <input type="text" placeholder="Your Name" required>
-    <input type="email" placeholder="Your Email" required>
-    <textarea placeholder="Your Message" required></textarea>
-    <button type="submit">Send Message</button>
-  </form>
-</section>
-
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="contact-card" data-aos="fade-up">
+      <h2>Contact Me</h2>
+      <form id="contactForm" novalidate>
+        <div class="form-row">
+          <input type="text" id="name" name="name" placeholder="Your Name" required>
+          <span class="form-error" id="nameError"></span>
+        </div>
+        <div class="form-row">
+          <input type="email" id="email" name="email" placeholder="Your Email" required>
+          <span class="form-error" id="emailError"></span>
+        </div>
+        <div class="form-row">
+          <input type="text" id="subject" name="subject" placeholder="Subject" required>
+          <span class="form-error" id="subjectError"></span>
+        </div>
+        <div class="form-row">
+          <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+          <span class="form-error" id="messageError"></span>
+        </div>
+        <button type="submit" class="btn submit-btn">Send Message</button>
+      </form>
+    </div>
+  </section>
 
   <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 J. Semon. All rights reserved.</p>
+  <footer class="footer-section">
+    <div class="footer-card">
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/in/j-semon/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/semonjacob/portfolio-website.git" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.instagram.com/semon_jacob/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.youtube.com/@semonjacob" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.facebook.com/semon.jacob" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="mailto:semonjeyakumar@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+      <p>&copy; 2025 J. Semon. All rights reserved.</p>
+    </div>
   </footer>
+
+  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      duration: 1000,
-      once: true,
-    });
-  </script>
   <script src="script.js"></script>
 </body>
 </html>
