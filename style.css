@@ -73,7 +73,7 @@ header#hero {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 0 20px;
+  padding: 100px 20px 0; /* Modified this line */
 }
 
 header#hero h1 {
