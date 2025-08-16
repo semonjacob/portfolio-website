@@ -1,4 +1,4 @@
-        /* ===========================
+/* ===========================
         Global Styles
         =========================== */
         * {
@@ -9,6 +9,7 @@
 
         body {
         font-family: 'Poppins', sans-serif;
+        background: #203a43; /* fallback color */
         background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
         color: #fff;
         line-height: 1.6;
@@ -143,60 +144,108 @@
         }
 
         /* Projects */
+        /* Projects Grid Responsive */
         .project-list {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 20px;
-        }
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 30px;
+          }
+          @media (max-width: 900px) {
+          .project-list {
+            grid-template-columns: repeat(2, 1fr);
+          }
+          }
+          @media (max-width: 600px) {
+          .project-list {
+            grid-template-columns: 1fr;
+          }
+          }
 
         .project {
-        background: rgba(255,255,255,0.05);
-        padding: 15px;
-        border-radius: 10px;
-        transition: transform 0.3s, box-shadow 0.3s;
-        }
-
-        .project:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 10px 20px rgba(0,0,0,0.3);
-        }
-
-        .project img {
-        width: 100%;
-        border-radius: 10px;
-        margin-bottom: 10px;
-        }
-
-        /* Contact Form */
-        form {
+        background: rgba(255,255,255,0.07);
+        padding: 22px 18px 28px 18px;
+        border-radius: 18px;
+        box-shadow: 0 4px 24px rgba(0,0,0,0.18), 0 1.5px 6px rgba(0,255,224,0.08);
+        transition: transform 0.35s cubic-bezier(.4,2,.6,1), box-shadow 0.3s, background 0.3s;
+        position: relative;
+        overflow: hidden;
         display: flex;
         flex-direction: column;
-        gap: 15px;
+        align-items: flex-start;
+        }
+        .project:hover {
+        transform: translateY(-10px) scale(1.03);
+        box-shadow: 0 12px 32px rgba(0,255,224,0.18), 0 2px 8px rgba(0,255,224,0.13);
+        background: rgba(0,255,224,0.07);
         }
 
-        form input, form textarea {
-        padding: 12px;
-        border-radius: 5px;
-        border: none;
-        outline: none;
+        /* Project Image Zoom on Hover */
+        .project img {
+        width: 100%;
+        border-radius: 12px;
+        margin-bottom: 14px;
+        transition: transform 0.4s cubic-bezier(.4,2,.6,1);
+        }
+        .project:hover img {
+        transform: scale(1.07);
         }
 
-        form button {
-        padding: 12px;
+        /* Project Category Buttons */
+        .project-categories {
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+        margin-bottom: 32px;
+        flex-wrap: wrap;
+        }
+        .project-category-btn {
+        padding: 10px 22px;
         border: none;
-        border-radius: 5px;
-        background: #00ffe0;
+        border-radius: 24px;
+        background: linear-gradient(90deg, #00ffe0 0%, #00d9ff 100%);
         color: #0f2027;
         font-weight: 600;
+        font-size: 1rem;
         cursor: pointer;
-        transition: background 0.3s;
+        box-shadow: 0 2px 8px rgba(0,255,224,0.13);
+        transition: box-shadow 0.3s, background 0.3s, color 0.3s;
+        outline: none;
+        }
+        .project-category-btn.active,
+        .project-category-btn:hover {
+        background: linear-gradient(90deg, #00d9ff 0%, #00ffe0 100%);
+        color: #0f2027;
+        box-shadow: 0 0 16px 2px #00ffe0;
         }
 
-        form button:hover {
-        background: #00c8b0;
+        /* Styled Project Links as Buttons */
+        .project .project-link-btn {
+        display: inline-block;
+        margin-top: 18px;
+        padding: 10px 22px;
+        border-radius: 24px;
+        background: linear-gradient(90deg, #00ffe0 0%, #00d9ff 100%);
+        color: #0f2027;
+        font-weight: 600;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0,255,224,0.13);
+        transition: box-shadow 0.3s, background 0.3s, color 0.3s;
+        border: none;
+        }
+        .project .project-link-btn:hover {
+        background: linear-gradient(90deg, #00d9ff 0%, #00ffe0 100%);
+        color: #0f2027;
+        box-shadow: 0 0 16px 2px #00ffe0;
         }
 
-        /* Footer */
+        /* Hide projects for filtering */
+        .project[hidden] {
+        display: none !important;
+        }
+
+        /* ===========================
+        Footer
+        =========================== */
         footer {
         text-align: center;
         padding: 20px;

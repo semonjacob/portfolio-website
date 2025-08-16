@@ -19,13 +19,6 @@
 
 <!-- AOS Animations -->
 <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-<script>
-  AOS.init({
-    duration: 1000, // animation speed (1s)
-    once: true,     // animate only once
-  });
-</script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
 
 </head>
@@ -86,18 +79,38 @@
 <!-- Projects Section -->
 <section id="projects" data-aos="fade-up">
   <h2>Projects</h2>
+  <!-- Category Filter Buttons -->
+  <div class="project-categories">
+    <button class="project-category-btn active" data-category="all">All</button>
+    <button class="project-category-btn" data-category="design">Design</button>
+    <button class="project-category-btn" data-category="video">Video</button>
+    <button class="project-category-btn" data-category="web">Web</button>
+  </div>
   <div class="project-list">
-    <div class="project" data-aos="zoom-in">
+    <div class="project" data-aos="fade-up" data-aos-delay="0" data-category="design">
+      <img src="assets/images/project1.jpg" alt="Social Media Graphics">
       <h3>Social Media Graphics</h3>
       <p>Designed banners, posters, and social media posts...</p>
+      <a href="#" class="project-link-btn" target="_blank">View Project</a>
     </div>
-    <div class="project" data-aos="zoom-in" data-aos-delay="150">
+    <div class="project" data-aos="fade-up" data-aos-delay="150" data-category="video">
+      <img src="assets/images/project2.jpg" alt="AI-Generated Content">
       <h3>AI-Generated Content</h3>
       <p>Created explainer videos using AI tools...</p>
+      <a href="#" class="project-link-btn" target="_blank">View Project</a>
     </div>
-    <div class="project" data-aos="zoom-in" data-aos-delay="300">
+    <div class="project" data-aos="fade-up" data-aos-delay="300" data-category="video">
+      <img src="assets/images/project3.jpg" alt="Ministry Outreach Video Campaign">
       <h3>Ministry Outreach Video Campaign</h3>
       <p>Produced promotional videos...</p>
+      <a href="#" class="project-link-btn" target="_blank">View Project</a>
+    </div>
+    <!-- Example web project -->
+    <div class="project" data-aos="fade-up" data-aos-delay="450" data-category="web">
+      <img src="assets/images/project4.jpg" alt="Portfolio Website">
+      <h3>Portfolio Website</h3>
+      <p>Developed a responsive portfolio website using HTML, CSS, and JS.</p>
+      <a href="#" class="project-link-btn" target="_blank">View Project</a>
     </div>
   </div>
 </section>
@@ -145,5 +158,13 @@
   <footer>
     <p>&copy; 2025 J. Semon. All rights reserved.</p>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  </script>
+  <script src="script.js"></script>
 </body>
 </html>
